@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samudi Uthpala | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b1020;
+    color: #f4f4f5;
+    line-height: 1.7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #11182b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #8bafff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #8bafff;
+}
+
+section {
+    padding: 85px 10%;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 65px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #8bafff;
+}
+
+.hero p {
+    max-width: 650px;
+    color: #b8c2d8;
+    font-size: 18px;
+}
+
+.tagline {
+    color: #8bafff;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #779bff;
+    color: #0b1020;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #a4bcff;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #8bafff;
+}
+
+.about-content {
+    max-width: 800px;
+    color: #c4cce0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #151e33;
+    padding: 25px;
+    border: 1px solid #263552;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #8bafff;
+}
+
+.card h3 {
+    color: #a7bdff;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #b8c2d8;
+    font-size: 14px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background: #192744;
+    border: 1px solid #405b8a;
+    padding: 9px 17px;
+    border-radius: 20px;
+    color: #c4d3ff;
+}
+
+.project-links {
+    margin-top: 15px;
+}
+
+.project-links a {
+    color: #8bafff;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.contact-form {
+    max-width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    border: 1px solid #344462;
+    background: #151e33;
+    color: white;
+    font: inherit;
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #11182b;
+    color: #9ba9c5;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Samudi.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journal">Journal</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="tagline">IT Undergraduate | Future Software Engineer</div>
+
+    <h1>Hello, I'm <span>Samudi Uthpala.</span></h1>
+
+    <p>
+        Exploring technology, understanding people, and creating
+        meaningful digital solutions. Passionate about Software
+        Engineering, Educational Research, and Social Impact.
+    </p>
+
+    <a href="#about" class="btn">Explore My Journey →</a>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-content">
+        <p>
+            I am a Bachelor of Science in Information Technology
+            undergraduate with a growing interest in software
+            development, technology, and research.
+        </p>
+
+        <br>
+
+        <p>
+            My goal is to become a Software Engineer while exploring
+            educational field research and the relationship between
+            technology, learning, and human development.
+        </p>
+
+        <br>
+
+        <p>
+            I believe technology is not just about writing code.
+            It is about identifying real-world problems, understanding
+            people, and developing solutions that make a difference.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills">
+    <h2 class="section-title">My Growing Toolkit</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Programming</h3>
+            <div class="skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Java</span>
+                <span class="skill">JavaScript</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Technology</h3>
+            <div class="skills">
+                <span class="skill">Arduino</span>
+                <span class="skill">ESP32</span>
+                <span class="skill">IoT</span>
+                <span class="skill">Firebase</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Professional Interests</h3>
+            <div class="skills">
+                <span class="skill">Research</span>
+                <span class="skill">Education</span>
+                <span class="skill">Psychology</span>
+                <span class="skill">Problem Solving</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>TerraPlus</h3>
+
+            <p>
+                Smart Weather Reporting System using IoT technology
+                to monitor environmental conditions and provide
+                useful weather information.
+            </p>
+
+            <br>
+
+            <p><strong>Technologies:</strong> ESP32, Sensors,
+            Arduino, Blynk, Firebase.</p>
+
+            <div class="project-links">
+                <a href="#">GitHub Repository →</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+
+            <p>
+                Exploring responsive web design and developing
+                user-friendly digital experiences using modern
+                web technologies.
+            </p>
+
+            <br>
+
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript.</p>
+
+            <div class="project-links">
+                <a href="#">GitHub Repository →</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- LEARNING JOURNAL -->
+<section id="journal">
+    <h2 class="section-title">Learning Journal</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Learning Through Experience</h3>
+            <p>
+                Every challenge is an opportunity to understand
+                something new and improve my problem-solving skills.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Technology & Education</h3>
+            <p>
+                Exploring how digital technologies can improve
+                learning experiences and educational opportunities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Personal Growth</h3>
+            <p>
+                Documenting ideas, reflections, lessons, and
+                experiences throughout my academic journey.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+    <h2 class="section-title">Achievements & Activities</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Project Showcase</h3>
+            <p>
+                Participation in the Top 7 Project Showcase.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Arduino Showcase</h3>
+            <p>
+                Experience in presenting and exploring
+                Arduino-based technology projects.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Let's Connect</h2>
+
+    <p style="color:#b8c2d8; margin-bottom:25px;">
+        Interested in technology, education, or meaningful
+        collaborations? Feel free to connect.
+    </p>
+
+    <div class="contact-form">
+
+        <form onsubmit="sendMessage(event)">
+            <input type="text" id="name"
+                   placeholder="Your Name" required>
+
+            <input type="email" id="email"
+                   placeholder="Your Email" required>
+
+            <textarea id="message" rows="5"
+                      placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn">
+                Send Message →
+            </button>
+        </form>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Samudi Uthpala | Personal Portfolio</p>
+    <p>Designed with curiosity and purpose.</p>
+</footer>
+
+<script>
+function sendMessage(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const subject = encodeURIComponent("Portfolio Contact");
+    const body = encodeURIComponent(
+        "Name: " + name +
+        "\nEmail: " + email +
+        "\nMessage: " + message
+    );
+
+    window.location.href =
+        "mailto:YOUR_EMAIL@example.com?subject=" +
+        subject + "&body=" + body;
+}
+</script>
+
+</body>
+</html>
