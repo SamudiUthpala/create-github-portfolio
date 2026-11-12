@@ -47,12 +47,17 @@ export const skillGroups = [
 
 export const projects = [
   {
-    label: 'Weather / Concept',
-    title: 'Smart Weather Reporting System',
+    label: 'IoT / Team project',
+    badge: 'Top 7 · Project Showcase 2026',
+    title: 'Smart Weather Reporting System (TerraPlus)',
     summary:
-      'A team project exploring how weather information can be collected from sensors and presented in a clear, useful way.',
+      'A smart system to observe, understand, and report weather using environmental sensors and the ESP32 microcontroller.',
+    image: '/images/weather.jpeg',
+    imageAlt:
+      'Smart Weather Reporting System model with a sensor tower, LED indicators for water level, temperature and rain, a small house, and a windmill',
+    video: '/images/weather-demo.mp4',
     contributionIntro:
-      'As a team member, I contributed to understanding the system requirements, exploring the functions of different environmental sensors, and learning how the ESP32 microcontroller connects the hardware components.',
+      'As a team member, I contributed to understanding the system requirements, exploring the functions of different environmental sensors, and learning how the ESP32 microcontroller connects the hardware components. This project helped me connect theoretical IT knowledge with practical IoT applications.',
     contributions: [
       {
         title: 'Sensor understanding',
@@ -63,7 +68,41 @@ export const projects = [
         text: 'Participated in understanding the overall system architecture and how its components work together.',
       },
     ],
-    tags: ['ESP32', 'IoT', 'Sensors', 'Teamwork'],
+    tags: [
+      'ESP32',
+      'DHT11 / DHT22',
+      'Rain Sensor',
+      'BMP085',
+      'Water Level Sensor',
+      'LCD Display',
+      'Firebase',
+      'Blynk',
+      'Arduino IDE',
+      'Embedded C / C++',
+      'Wi-Fi',
+      'I²C',
+    ],
+  },
+]
+
+// Add a new object here for every certificate, award, or event.
+export const achievements = [
+  {
+    title: 'Certificate of Excellence',
+    issuer: 'SLIIT Matara Center',
+    date: '2026',
+    description:
+      'Selected among the Top 7 Best Projects at the Fundamentals of Computing Project Showcase 2026 for the Smart Weather Reporting System (TerraPlus).',
+    image: '/images/certificate-excellence.jpeg',
+    imageAlt: 'Certificate of Excellence presented to Uthpala R.P.S. by SLIIT Matara Center',
+  },
+  {
+    title: 'Arduino Showcase 2026',
+    issuer: 'SLIIT UNI · Matara Center',
+    date: '2026',
+    description: 'Presented our IoT weather project and received certificates together with the team and academic staff.',
+    image: '/images/showcase-team.jpeg',
+    imageAlt: 'Project team holding certificates with lecturers at the SLIIT Arduino Showcase 2026',
   },
 ]
 
